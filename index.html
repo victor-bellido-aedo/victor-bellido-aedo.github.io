@@ -1,67 +1,126 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Víctor Bellido Aedo</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Víctor Bellido Aedo</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #f5f7fa;
-        }
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+}
 
-        header {
-            background: #0f3d5e;
-            color: white;
-            text-align: center;
-            padding: 40px 20px;
-        }
+/* ===== HEADER ===== */
+.header {
+    position: relative;
+    height: 350px;
+    background: url("img/fondo.png") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 
-        nav {
-            background: #0b2f47;
-            text-align: center;
-            padding: 10px;
-        }
+/* Overlay oscuro */
+.header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 40, 70, 0.65);
+}
 
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
+/* Contenido */
+.header-content {
+    position: relative;
+    color: white;
+}
 
-        section {
-            max-width: 900px;
-            margin: 30px auto;
-            background: white;
-            padding: 30px;
-            border-radius: 8px;
-        }
+/* Nombre */
+.header h1 {
+    margin: 0;
+    font-size: 42px;
+    font-weight: bold;
+}
 
-        h1, h2 {
-            color: #0f3d5e;
-        }
-    </style>
+/* Subtítulo */
+.header p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Escudo */
+.logo {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.logo img {
+    height: 70px;
+}
+
+/* ===== NAV ===== */
+nav {
+    background: #0f2f44;
+    text-align: center;
+    padding: 15px 0;
+}
+
+nav a {
+    color: white;
+    margin: 0 18px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ===== CONTENIDO ===== */
+.container {
+    width: 80%;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #1c4d6e;
+}
+
+ul {
+    line-height: 1.8;
+}
+</style>
+
 </head>
 
 <body>
 
-<header>
-    <h1>Msc. Ing. Víctor Bellido Aedo</h1>
-    <p>Investigador RENACYT Nivel VII | Docente universitario en Ingeniería Civil</p>
+<!-- HEADER -->
+<header class="header">
+    <div class="logo">
+        <img src="img/escudo.png" alt="UNSCH">
+    </div>
+
+    <div class="header-content">
+        <h1>Msc. Ing. Víctor Bellido Aedo</h1>
+        <p>Investigador RENACYT Nivel VII | Docente universitario en Ingeniería Civil</p>
+    </div>
 </header>
 
+<!-- MENÚ -->
 <nav>
     <a href="index.html">Inicio</a>
     <a href="investigacion.html">Investigación</a>
     <a href="publicaciones.html">Publicaciones</a>
     <a href="docencia.html">Docencia</a>
-    <a href="ejercicio.html">Ejercicio<br>profesional</a>
+    <a href="ejercicio.html">Ejercicio profesional</a>
     <a href="recursos.html">Recursos</a>
 </nav>
-
 <section>
     <h2>Bienvenido</h2>
 
@@ -110,7 +169,7 @@ de herramientas para mejorar el desempeño estructural de infraestructuras viale
     <li><a href="investigacion.html">Líneas y proyectos de investigación</a></li>
     <li><a href="publicaciones.html">Producción científica</a></li>
     <li><a href="docencia.html">Actividad docente</a></li>
-    <li><a href="cv.html">Curriculum académico</a></li>
+    <li><a href="ejercicio.html">Ejercicio profesional</a>
     <li><a href="recursos.html">Recursos académicos</a></li>
 </ul>
 </section>

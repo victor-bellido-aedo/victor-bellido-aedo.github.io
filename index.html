@@ -10,6 +10,62 @@ body {
     font-family: Arial, sans-serif;
     background: #f4f6f8;
 }
+
+    .container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+    .contacto {
+    padding: 40px 0;
+}
+
+.contacto h2 {
+    margin-bottom: 10px;
+}
+
+.contacto p {
+    margin-bottom: 20px;
+}
+    
+    .footer {
+    background: #1a3c5a;
+    color: white;
+    padding: 30px 20px;
+    margin-top: 50px;
+}
+
+.footer-container {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.footer-nombre {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer-links {
+    margin: 15px 0;
+}
+
+.footer-links a {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-copy {
+    font-size: 14px;
+    color: #ccc;
+}
+    
 /* GRID */
 .id-grid {
     display: grid;
@@ -283,22 +339,30 @@ ul {
 <!-- CONTACTO -->
 <section class="contacto">
 
-  <h2 style="margin-top:40px;">Contacto</h2>
-  <p>Puedes contactarme para investigación, docencia y consultoría:</p>
+  <div class="container">
 
-  <div class="id-grid">
+    <h2>Contacto</h2>
+    <p>Puedes contactarme para investigación, docencia y consultoría:</p>
 
-    <div class="id-card">
-      <h3>Email</h3>
+    <div class="id-grid">
+
+      <div class="id-card">
+        <h3>Email</h3>
         <p>
-        <a href="mailto:victor.bellido@unsch.edu.pe">victor.bellido@unsch.edu.pe</a>
+          <a href="mailto:victor.bellido@unsch.edu.pe">
+            victor.bellido@unsch.edu.pe
+          </a><br>
+          <a href="mailto:vbellido@cip.org.pe">
+            vbellido@cip.org.pe
+          </a>
         </p>
-        <p>
-        <a href="mailto:vbellido@cip.org.pe">vbellido@cip.org.pe</a>
-        </p>
+      </div>
+
     </div>
 
-</section>    
+  </div>
+
+</section>  
 
 <footer class="footer">
 

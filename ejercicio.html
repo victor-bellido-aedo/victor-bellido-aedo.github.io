@@ -2,89 +2,214 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Ejercicio profesional - Víctor Bellido Aedo</title>
+<title>Víctor Bellido Aedo</title>
 
 <style>
 body {
-    font-family: Arial;
     margin: 0;
-    background: #f5f7fa;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+}
+/* GRID */
+.id-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
 }
 
-header {
-    background: #1f4e6e;
+/* TARJETAS */
+.id-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #1f2d3d;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: all 0.25s ease;
+}
+
+/* HOVER */
+.id-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* ICONOS */
+.id-card img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+/* TITULO */
+.id-card h3 {
+    margin: 10px 0 5px;
+}
+
+/* TEXTO */
+.id-card p {
+    font-size: 0.9rem;
+    color: #555;
+}
+/* ===== HEADER HERO ===== */
+.hero {
+    position: relative;
+    height: 420px;
+    background: url('img/fondo.png') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     color: white;
-    text-align: center;
-    padding: 40px;
 }
 
+/* Oscurece imagen para mejor contraste */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(20, 45, 75, 0.65);
+}
+
+/* Contenido centrado */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+}
+
+/* Nombre principal */
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Subtítulo */
+.hero p {
+    font-size: 1.2rem;
+    opacity: 0.95;
+}
+
+/* ===== LOGO SIN FONDO BLANCO ===== */
+.logo {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width: 90px;
+    z-index: 3;
+    opacity: 0.9;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .hero {
+        height: 300px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .logo {
+        width: 60px;
+        top: 10px;
+        right: 15px;
+    }
+}
+    
+/* ===== NAV ===== */
 nav {
-    background: #163d55;
-    padding: 15px;
+    background: #0f2f44;
     text-align: center;
+    padding: 15px 0;
 }
 
 nav a {
     color: white;
-    margin: 0 15px;
+    margin: 0 18px;
     text-decoration: none;
     font-weight: bold;
 }
 
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ===== CONTENIDO ===== */
 .container {
-    max-width: 900px;
-    margin: 40px auto;
+    width: 80%;
+    margin: 30px auto;
     background: white;
     padding: 30px;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 h2 {
-    color: #1f4e6e;
+    color: #1c4d6e;
 }
 
-p {
-    line-height: 1.6;
+ul {
+    line-height: 1.8;
 }
 </style>
+
 </head>
 
 <body>
 
-<header>
-<h1>Ejercicio profesional</h1>
-<p>Experiencia profesional en ingeniería civil</p>
-</header>
+<!-- HEADER -->
+<header class="hero">
+    <div class="overlay"></div>
 
+    <!-- Logo institucional -->
+    <img src="img/escudo.png" alt="UNSCH" class="logo">
+
+    <!-- Contenido principal -->
+    <div class="hero-content">
+        <h1>Ejercicio profesional</h1>
+        <p>Experiencia y actividad profesional en ingeniería civil</p>
+    </div>
+</header>
+    
+<!-- MENÚ -->
 <nav>
-<a href="index.html">Inicio</a>
-<a href="investigacion.html">Investigación</a>
-<a href="publicaciones.html">Publicaciones</a>
-<a href="docencia.html">Docencia</a>
-<a href="ejercicio.html">Ejercicio<br>profesional</a>
-<a href="recursos.html">Recursos</a>
+    <a href="index.html">Inicio</a>
+    <a href="investigacion.html">Investigación</a>
+    <a href="publicaciones.html">Publicaciones</a>
+    <a href="docencia.html">Docencia</a>
+    <a href="ejercicio.html">Ejercicio profesional</a>
+    <a href="recursos.html">Recursos</a>
 </nav>
+
+    <!-- CONTENIDO -->
+<div class="container">
 
 <div class="container">
 
-<h2>Ejecución de obras</h2>
+<h2>Ejecución de proyectos</h2>
 <p>
-Contratista ejecutor de obras públicas y privadas inscrito en el 
-<a href="https://rnp.osce.gob.pe/" target="_blank">Registro Nacional de Proveedores (RNP)</a>.
+Contratista ejecutor de obras públicas y privadas, inscrito en el Registro Nacional de Proveedores (RNP).
 </p>
 
-<h2>Consultoría de obras</h2>
+<h2>Consultoría de proyectos</h2>
 <p>
-Proyectista y supervisor de obras públicas y privadas inscrito en el 
-<a href="https://rnp.osce.gob.pe/" target="_blank">Registro Nacional de Proveedores (RNP)</a>.
+Proyectista y supervisor de obras públicas y privadas, inscrito en el Registro Nacional de Proveedores (RNP).
 </p>
 
-<h2>Solución de controversias en la construcción</h2>
+<h2>Controversias en la industria de la construcción</h2>
 <p>
-Árbitro y adjudicador en Juntas de Prevención y Resolución de Disputas (JPRD) y Dispute Boards (DB), 
-en el 
-<a href="https://www.cip.org.pe/" target="_blank">
-Centro de Arbitraje y Resolución de Disputas - CIP Lima
+Árbitro y adjudicador en Juntas de Prevención y Resolución de Disputas (JPRD) y Dispute Boards (DB), en el 
+<a href="https://card.ciplima.org.pe/" target="_blank">
+Centro de Arbitraje y Resolución de Disputas del Colegio de Ingenieros del Perú Concejo Departamental de Lima.
 </a>.
 </p>
 

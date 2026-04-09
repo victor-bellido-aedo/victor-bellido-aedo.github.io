@@ -48,6 +48,38 @@
 </script>
     
 <style>
+
+.contacto {
+    text-align: left;
+}
+
+.contact-item {
+    margin-bottom: 12px;
+}
+
+.contact-label {
+    display: block;
+    font-size: 0.85rem;
+    color: #6b7785;
+    margin-bottom: 2px;
+}
+
+.contact-item a {
+    color: #0a66c2;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+.contact-item p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #1f2d3d;
+}
+  
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -384,31 +416,35 @@ Desarrollo investigación en ingeniería civil en Perú, con énfasis en pavimen
 </div>
 
 <!-- CONTACTO -->
-<section class="contacto">
+<div class="id-card contacto">
+    <h3>Contacto</h3>
 
-  <div class="container">
-
-    <h2>Contacto</h2>
-    <p>Puedes contactarme a:</p>
-
-    <div class="id-grid">
-
-      <div class="id-card">
-        <h3>Email</h3>
-        <p>
-          <a href="mailto:victor.bellido@unsch.edu.pe">
+    <div class="contact-item">
+        <span class="contact-label">Correo institucional</span>
+        <a href="mailto:victor.bellido@unsch.edu.pe">
             victor.bellido@unsch.edu.pe
-          </a><br>
-          <a href="mailto:vbellido@cip.org.pe">
-            vbellido@cip.org.pe
-          </a><br>
-           <a href="mailto:https://www.linkedin.com/in/v%C3%ADctor-bellido-aedo/">
-            https://www.linkedin.com/in/v%C3%ADctor-bellido-aedo/
-          </a>
-        </p>
-      </div>
-
+        </a>
     </div>
+
+    <div class="contact-item">
+        <span class="contact-label">Correo profesional</span>
+        <a href="mailto:vbellido@cip.org.pe">
+            vbellido@cip.org.pe
+        </a>
+    </div>
+
+    <div class="contact-item">
+        <span class="contact-label">LinkedIn</span>
+        <a href="https://www.linkedin.com/in/v%C3%ADctor-bellido-aedo/" target="_blank">
+            Ver perfil profesional
+        </a>
+    </div>
+
+    <div class="contact-item">
+        <span class="contact-label">Disponibilidad</span>
+        <p>Consultoría, investigación y adjudicación en Dispute Boards</p>
+    </div>
+</div>
 
   </div>
 
